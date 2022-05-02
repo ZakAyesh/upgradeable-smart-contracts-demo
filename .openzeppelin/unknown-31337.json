@@ -1,0 +1,43 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+    "txHash": "0x23439ca6a4de19b25e63abe4ba0cab3ddef64073ad06639e78fec42f6314d015"
+  },
+  "proxies": [
+    {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0xb8a7c5afbda798b6236956b4feed3ddce495a96bd9a408da093f5314101df77e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      "txHash": "0x55e7c475e08733baf29a926b08cdb9e03db791050264f2d5036e7f32a501e400",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "54a4bcf1ac52c00c7262591da7d0a7f05d38be31df6c587fe46b6e97486c6d2d": {
+      "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "txHash": "0xd1c2f96c66356bbf6d92d65897d7d5b8d756aceaa4161361afe3c16f576aeed9",
+      "layout": {
+        "storage": [
+          {
+            "label": "horsePower",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "TeslaPower",
+            "src": "contracts/TeslaPower.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
