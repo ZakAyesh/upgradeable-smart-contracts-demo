@@ -18,9 +18,9 @@ describe('Tesla (proxy)', function () {
   })
   it('upgrades', async function () {
     const TeslaV2 = await ethers.getContractFactory("TeslaPowerV2")
-    teslaV2 = await upgrades.upgradeProxy(box.address, TeslaV2)
-    await tesla.incrementHorsePower()
-    let result = await box.retrieveHorsePower()
+    teslaV2 = await upgrades.upgradeProxy(tesla.address, TeslaV2)
+    await teslaV2.incrementHorsePower()
+    let result = await teslaV2.retrieveHorsePower()
     expect(result).to.equal(601)
   })
 })
